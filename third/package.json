@@ -1,0 +1,35 @@
+{
+  "name": "interview_drowzeenico",
+  "version": "1.0.0",
+  "description": "https://jsbin.com/jopupuy/1/edit?js,output",
+  "main": "app.js",
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.js"
+    ]
+  },
+  "scripts": {
+    "start": "node -r dotenv/config app.js",
+    "test": "jest --setupFiles dotenv/config --watch --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/artemiyredkov/interview_drowzeenico.git"
+  },
+  "author": "Nikolay Terentev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/artemiyredkov/interview_drowzeenico/issues"
+  },
+  "homepage": "https://gitlab.com/artemiyredkov/interview_drowzeenico#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
